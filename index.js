@@ -31,7 +31,7 @@ function deepestChild(){
     console.log('next', next);
   }
   
-  if(next)
+  if(next !== 'boo!')
    current = next.shift();
   console.log('next',current);
   console.log('current', current);
