@@ -26,16 +26,13 @@ function deepestChild(){
   
   while (current) {
   
+  if (current.innerHTML === 'boo!')
+    return current
   for (let i = 0; i < current.length; i++){
     next.push(current[i])
-    console.log('next', next);
-  }
+    }
   
-  if(next !== 'undefined')
-   current = next.shift();
-  console.log('next',current);
-  console.log('current', current);
-  }
+  current = next.shift();
+    }
   
-  return current;
 }
