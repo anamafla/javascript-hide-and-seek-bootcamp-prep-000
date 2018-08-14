@@ -26,7 +26,7 @@ function deepestChild(){
   
   while (current) {
   
-  for (let i = 0; i < current.length-1; i++){
+  for (let i = 0; i < current.length; i++){
     next.push(current[i])
     console.log('next', next);
   }
