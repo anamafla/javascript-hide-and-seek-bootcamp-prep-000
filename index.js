@@ -26,11 +26,12 @@ function deepestChild(){
   
   while (current) {
   
-  for (let i = 0; i < current.length; i++)
+  for (let i = 0; i < current.length; i++){
     next.push(current[i])
-  
+    console.log('next', next);
+  }
   current = next.shift();
-  
+  console.log('current', current);
   }
   
   return current;
