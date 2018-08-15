@@ -25,7 +25,7 @@ function deepestChild(){
   
   
   while (current) {
-  
+  console.log('current.children', current.children)
   if (current.children === 0)
     return current
   for (let i = 0; i < current.length; i++){
