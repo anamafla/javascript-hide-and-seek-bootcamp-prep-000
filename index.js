@@ -26,7 +26,7 @@ function deepestChild(){
   
   while (current) {
   
-  if (current.innerHTML === 'boo!')
+  if (current.children === 0)
     return current
   for (let i = 0; i < current.length; i++){
     next.push(current[i])
