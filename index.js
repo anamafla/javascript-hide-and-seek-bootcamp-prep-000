@@ -30,6 +30,7 @@ function deepestChild(){
     next.push(current[i])
     }
   
+  if(next.children !== 0)
   current = next.shift();
     }
  
