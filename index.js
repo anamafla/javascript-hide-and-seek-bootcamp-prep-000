@@ -24,15 +24,15 @@ function deepestChild(){
   let next=[];
   
   
-  while (current.children !== 0) {
+  while (current.firstElementChild !== null) {
 
   for (let i = 0; i < current.length; i++){
     next.push(current[i])
     }
   
-  if(next.children !== 0)
+  
    current = next.shift();
-    }
+    
  
  return current; 
 }
